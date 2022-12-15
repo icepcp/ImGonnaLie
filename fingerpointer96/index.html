@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>ngl knockoff</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body class="bg-dark" style="background: linear-gradient(34deg, #7ba0f5 0%, #182848 100%);height: 100%;margin: 0;background-repeat: no-repeat;background-attachment: fixed;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-center text-white" style="margin-top: 30px;font-weight: bold;font-style: italic;font-size: 42px;margin-bottom: -8px;">igl.</h3>
+            </div>
+        </div>
+        <div class="row d-lg-flex justify-content-center justify-content-lg-center">
+            <div class="col-sm-8 col-md-6 col-lg-5 col-xl-4 col-xxl-4 offset-md-0" style="padding-left: 45px;padding-right: 45px;">
+                <div class="card text-start" style="margin: auto;margin-top: 30px;background: rgba(255,255,255,0);border-style: none;">
+                    <div class="card-body" style="background: #ffffff;padding-bottom: 5px;border-radius: 0;border-top-left-radius: 20px;border-top-right-radius: 20px;">
+                        <h4 class="card-title" style="font-weight: bold;">fingerpointer96</h4>
+                        <h6 class="text-muted card-subtitle mb-2">send me anonymous messages!</h6>
+                    </div>
+                    <form id="im-gonna-lie-response" name="form"><input class="form-control input" type="text" id="message" style="border-style: none;background: rgba(255,255,255,0.47);border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;padding-bottom: 30px;padding-left: 15px;padding-top: 14px;border-top-left-radius: 0px;border-top-right-radius: 0px;" placeholder="type your message here.." name="message" autocomplete="off">
+                        <div class="row d-sm-flex justify-content-sm-center">
+                            <div class="col-sm-12 d-flex justify-content-center">
+                                <p class="text-start" style="margin-top: 20px;color: var(--bs-body-bg);">🔒&nbsp; anonymous q&amp;a<button class="btn btn-primary" type="button" style="border-width: 0px;background: rgba(13,110,253,0);" onclick="popup()" data-bs-toggle="modal" data-bs-target="#Modal"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-info-circle-fill" style="margin-top: -4px;">
+                                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path>
+                                        </svg></button></p>
+                            </div>
+                        </div><button class="btn btn-primary btn-lg d-flex d-xl-flex justify-content-center justify-content-xl-center" style="margin: auto;border-radius: 20px;background: rgb(52,74,121);border-width: 0px;" type="submit"><span>send</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div id="Modal" class="modal fade" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 id="ModalLabel" class="modal-title fs-5">what data does igl collect?</h1><button class="btn btn-primary btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>the only data that gets collected is the time and a unique id (random on every submission).&nbsp;<br><br>unlike ngl, I do not collect device id, which can be used to track you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../assets/js/SupabaseForm.js"></script>
+</body>
+
+</html>
