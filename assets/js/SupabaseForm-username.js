@@ -1,5 +1,5 @@
 const { createClient } = supabase
-supabase = createClient("https://xjpjzawuijmdqxynxxfg.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhqcGp6YXd1aWptZHF4eW54eGZnIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzEwMDkxNjAsImV4cCI6MTk4NjU4NTE2MH0.gwIAq1IKjApb5vNAJbeA5pw_y4llKT-iJrGuR8Rfa5M")
+supabase = createClient("SUPABASE-LINK", "SUPABASE-ANON-KEY")
       
 const form = document.querySelector('#im-gonna-lie-response')
 form.addEventListener('submit', async (event) => {
@@ -16,7 +16,7 @@ form.addEventListener('submit', async (event) => {
             }
           })
 
-          const { error } = await supabase.from('fingerpointer96').insert([submision], { returning: 'minimal'})
+          const { error } = await supabase.from('USERNAME').insert([submision], { returning: 'minimal'})
 
           if (error) {
               alert('type something bruv')
