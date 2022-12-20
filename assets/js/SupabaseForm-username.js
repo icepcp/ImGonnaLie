@@ -19,7 +19,7 @@ form.addEventListener('submit', async (event) => {
           const { error } = await supabase.from('USERNAME').insert([submision], { returning: 'minimal'})
 
           if (error) {
-              alert('type something bruv')
+              alert('there was an error sending your message')
           } else {
               window.location.replace("success.html")
           }
